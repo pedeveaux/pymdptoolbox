@@ -1090,6 +1090,7 @@ class QLearning(MDP):
         self.P = self._computeTransition(transitions)
 
         self.R = reward
+        self.policy = None
 
         self.alpha_t = _np.ones(self.A)
         self.beta_t = _np.ones(self.A)
